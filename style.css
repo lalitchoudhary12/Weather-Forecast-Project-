@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman';
+    color: black;
+}
+body {
+    background: url(weather.avif);
+    height: 100vh;
+    background-size:cover;
+}
+.card {
+   width: 60%;
+   height: 450px;
+   /* background-color:rgba(10, 159, 233, 0.122); */
+   max-width: 428px;
+   text-align: center;
+   margin: 90px auto;
+   border-radius: 20px;
+   padding: 40px 35px;
+}
+#search {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+#searchBox {
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    outline: 0;
+    font-size: 20px;
+    padding-left: 20px;
+}
+#searchBtn {
+    margin-top: 5px;
+    cursor: pointer;
+    background-color:#d5eae4;
+    border-style: none; 
+    
+}
+#weather {
+    margin-top: 40px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
+}
+#weather h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+#weather h2 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+#details {
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+
+}
+#humidity ,#wind {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.col div {
+    display: inline-block;
+   line-height: 13px;
+   margin-left: 10px;
+   font-size:20px ;
+   font-weight: bolder;
+}
+
+@media screen and (max-width:1024px) {
+    #details {
+        height: 100px;
+        width: 100%;
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    } 
+    .card {
+        width: 80%;
+        height: 525px;
+        margin-top: 10px;
+    }
+    body {
+        background: url(weather1.avif);
+        height: 100vh;
+        background-size:cover;
+    }
+    *{
+        color: white;
+    }
+    #searchBtn {
+        border-radius: 30%;
+    }
+    #searchBox {
+       color: black;
+    }
+   
+}
+
